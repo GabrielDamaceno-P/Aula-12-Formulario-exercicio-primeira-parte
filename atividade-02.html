@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+
+        #form {
+            padding: 10px;
+            margin: auto;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            width: 30%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+
+        <form id="conteudo">
+            <h1 align="center">Cadastro</h1>
+            <p><label for="inome">Nome Completo</label><br><input type="text" name="nome" id="inome" required size="50">
+            </p>
+            <p><label for="iemail">E-mail</label><br><input type="email" name="email" id="iemail" required size="50">
+            </p>
+            <p><label for="isenha">Senha</label><br><input type="password" name="senha" id="isenha" required
+                    autocomplete="current-password" size="50"></p>
+
+            <p align="center"><input type="submit" value="cadastrar"></p>
+
+        </form>
+    </div>
+</body>
+
+</html>
