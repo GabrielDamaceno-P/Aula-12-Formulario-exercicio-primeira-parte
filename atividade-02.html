@@ -13,39 +13,58 @@
 
         #form {
             display: flex;
-            flex-direction: column;
-            padding: 10px;
+            padding: 50px 60px;
             margin: auto;
-            align-items: center;
             border: 1px solid white;
             border-radius: 10px;
             background-color: white;
-            width: 35%;
+            width: 25%;
+            min-height: 450px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         input {
-            border-color: white;
+            border: 1px solid rgb(18, 17, 17);
             border-radius: 8px;
             padding: 10px;
-
+            width: 100%;
         }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="submit"]{
+        background-color: rgb(24, 119, 242);
+        color: white;
+        transition: transform 1s ease-out;
+        }
+        input[type="submit"]:hover{
+            transform: scale(1.1);
+        }
+        a{
+            color:rgb(24, 119, 242) ;
+        }
+        
     </style>
 </head>
 
 <body>
     <div id="form">
 
-        <form id="conteudo">
+        <form autocomplete="off">
             <h1 align="center">Cadastro</h1>
-            <p><label for="inome">Nome Completo</label><br><input type="text" name="nome" id="inome" required size="50">
+            <p><label for="inome"><strong>Nome Completo</strong></label><br><input type="text" name="nome" id="inome" required size="50">
             </p>
-            <p><label for="iemail">E-mail</label><br><input type="email" name="email" id="iemail" required size="50">
+            <p><label for="iemail"><strong>E-mail</strong></label><br><input type="email" name="email" id="iemail" required size="50">
             </p>
-            <p><label for="isenha">Senha</label><br><input type="password" name="senha" id="isenha" required
+            <p><label for="isenha"><strong>Senha</strong></label><br><input type="password" name="senha" id="isenha" required
                     autocomplete="current-password" size="50"></p>
 
             <p align="center"><input type="submit" value="cadastrar"></p>
+            <p align="center">Já possui uma conta? <a href="#" >Entrar</a></p>
 
         </form>
     </div>
